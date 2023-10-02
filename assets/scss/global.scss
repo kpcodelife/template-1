@@ -1,0 +1,75 @@
+/* Import Tailwind */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Define Fonts */
+/* Roboto 300, 400, 500, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.font-primary {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Define Color classes */
+.color {
+  &-teal {
+    color: #00c1b5;
+  }
+  &-orange {
+    color: #ff651a
+  }
+  &-yellow {
+    color: #ffbe00;
+  }
+  &-blue {
+    color: #1d3fbb;
+  }
+  &-red {
+    color: #e30512;
+  }
+  &-dark {
+    color:#010101;
+  }
+  &-light {
+    color:#fff8e1;
+  }
+}
+
+.background {
+  &-teal {
+    background-color: #00c1b5;
+  }
+  &-orange {
+    background-color: #ff651a
+  }
+  &-yellow {
+    background-color: #ffbe00;
+  }
+  &-blue {
+    background-color: #1d3fbb;
+  }
+  &-red {
+    background-color: #e30512;
+  }
+  &-dark {
+    background-color:#010101;
+  }
+  &-light {
+    background-color:#fff8e1;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.box-shadow {
+  &-sm {
+
+  }
+
+  &-lg {
+    box-shadow: 1px -1px 19px 1px rgba(0,0,0,0.5);
+  }
+}
