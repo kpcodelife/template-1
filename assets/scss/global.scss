@@ -62,6 +62,8 @@
 
 body {
   margin: 0;
+  overflow: hidden;
+  margin: 0; /* Reset margin to prevent unexpected spacing */
 }
 
 .box-shadow {

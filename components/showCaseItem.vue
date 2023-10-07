@@ -1,5 +1,5 @@
 <template>
-  <section class="w-100 h-screen flex items-center justify-center flex-col" :class="`background-${backgroundColor}`">
+  <section class="w-100 h-full flex items-center justify-center flex-col" :class="`background-${backgroundColor}`">
     <div class="w-3/4 md:w-[320px] box-shadow-lg mb-4">
       <img class="w-100 object-cover" :src="`/images/${imageSrc}`"/>
     </div>

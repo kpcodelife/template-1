@@ -1,7 +1,7 @@
 <template>
   <div class="pageNav w-fit">
     <ul>
-      <li v-for="item in navItems" :key="item.uid" class="my-2 text-xl cursor-pointer hover:underline" >
+      <li v-for="(item, index) in navItems" :key="item.uid" class="my-2 text-xl cursor-pointer hover:underline" @click="menuClick(index)">
         {{ item.name }}
       </li>
     </ul>
@@ -9,6 +9,8 @@
 </template>
 
 <script setup>
+const emit = defineEmits(['navigateTo'])
+
 defineProps({
   navItems: {
     type: Array,
@@ -36,6 +38,10 @@ defineProps({
     ]
   },
 })
+
+const menuClick = index => {
+  emit('navigateTo', index)
+}
 </script>
 
 <style lang="scss">
